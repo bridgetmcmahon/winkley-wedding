@@ -1,9 +1,16 @@
-import { useState } from "react";
-import { useActionData, Form } from "@remix-run/react";
+import { useState, useRef, useEffect } from "react";
+import { useFetcher } from "@remix-run/react";
 
 export default function RsvpForm() {
   const [submitted, setSubmitted] = useState(false);
-  let errors = useActionData();
+  const formRef = useRef()
+  const fetcher = useFetcher();
+
+  useEffect(() => {
+    if (fetcher.type === "done" && fetcher.data.ok) {
+      setSubmitted(true)
+    }
+  }, [fetcher])
 
   if (submitted) {
     return (
@@ -18,10 +25,10 @@ export default function RsvpForm() {
     <div>
       <h2>Please fill out the form below to RSVP</h2>
 
-      <Form method="post">
+      <fetcher.Form method="post" ref={formRef}>
         <div className="form-input__text mb2">
           <label>Name</label>
-          <input type="text" />
+          <input type="text" name="name" />
         </div>
 
         <div className="form-input__radio-buttons mb2">
@@ -66,13 +73,13 @@ export default function RsvpForm() {
 
         <div className="form-input__text">
           <label>Dietary requirements</label>
-          <input type="text" />
+          <input type="text" name="dietaryRequirements" />
         </div>
 
         <div className="form-submit pt2">
           <button type="submit">Submit</button>
         </div>
-      </Form>
+      </fetcher.Form>
     </div>
   );
 }

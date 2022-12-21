@@ -20,8 +20,6 @@ export async function getRsvp(name) {
 }
 
 export async function createRsvp(rsvp) {
-  // console.log("Creating rsvp")
-  // console.log(rsvp)
   const { name, attendingRecovery, attendingWedding, dietaryRequirements } =
     rsvp;
 

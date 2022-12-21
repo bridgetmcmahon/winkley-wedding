@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import admin from "firebase-admin"
-import { applicationDefault, initializeApp as initializeAdminApp } from "firebase-admin/app";
+import { cert, initializeApp as initializeAdminApp } from "firebase-admin/app";
 import { initializeApp } from "firebase/app";
 
 require("dotenv").config();
@@ -8,16 +8,20 @@ require("dotenv").config();
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
-  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  authDomain: "winkley-wedding-rsvps.firebaseapp.com",
   projectId: "winkley-wedding-rsvps",
   storageBucket: "winkley-wedding-rsvps.appspot.com",
-  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.FIREBASE_APP_ID
+  messagingSenderId: "1064223363919",
+  appId: "1:1064223363919:web:9da04ca8e45e6f4c132b3a"
 };
 
 if (!admin?.apps?.length) {
   initializeAdminApp({
-    credential: applicationDefault(),
+    credential: cert({
+      projectId: process.env.GOOGLE_PROJECT_ID,
+      clientEmail: process.env.GOOGLE_CLIENT_EMAIL,
+      privateKey: process.env.GOOGLE_PRIVATE_KEY
+    }),
     databaseURL: "https://winkley-wedding-rsvps.firebaseio.com"
   })
 };

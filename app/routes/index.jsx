@@ -1,14 +1,14 @@
 import { useLoaderData } from "@remix-run/react";
+import { json } from "@remix-run/node";
 import styles from "~/styles/global.css";
 import Modal from "~/components/Modal";
 import { useState } from "react";
 import { getRsvps, createRsvp } from "~/rsvp";
 
 export const action = async ({ request }) => {
-  console.log("making a request")
-  // await new Promise(res => setTimeout(res, 1000));
+  await new Promise(res => setTimeout(res, 500));
+
   let formData = await request.formData();
-  console.log(formData)
   let name = formData.get("name");
   let attendingWedding = formData.get("attendingWedding");
   let attendingRecovery = formData.get("attendingRecovery");
@@ -17,17 +17,21 @@ export const action = async ({ request }) => {
   let errors = {};
   if (!name) errors.name = true;
 
-  // if (Object.keys(errors).length) {
-  //   return errors;
-  // }
+  if (Object.keys(errors).length) {
+    return errors;
+  }
 
-  await createRsvp({
-    name,
-    attendingRecovery,
-    attendingWedding,
-    dietaryRequirements,
-  });
-  return null
+  try {
+    await createRsvp({
+      name,
+      attendingRecovery,
+      attendingWedding,
+      dietaryRequirements,
+    });
+    return json({ ok: true });
+  } catch (error) {
+    return json({ error: error.message });
+  }
 };
 
 export let loader = ({ request }) => {
