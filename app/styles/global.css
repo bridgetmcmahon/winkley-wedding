@@ -150,15 +150,10 @@ nav {
   box-shadow: 1px 1px 0 rgba(200, 200, 200, 0.2);
 }
 
-nav a,
-nav a:visited {
+a,
+a:visited {
   text-decoration: none;
-  padding-left: 3rem;
   color: #b88b5f;
-}
-
-nav a:hover {
-  text-decoration: underline;
 }
 
 .header-image {
@@ -236,11 +231,6 @@ nav a:hover {
   color: #b88b5f;
 }
 
-a,
-a:visited {
-  color: #9b9185;
-}
-
 .form-input__text label {
   display: block;
 }
@@ -277,7 +267,8 @@ a:visited {
 }
 
 .form-input__radio-buttons input[type="radio"]:checked + label {
-  background-color: #f8d8c4;
+  background-color: #f0a97d;
+  color: white;
 }
 
 .form-submit button {
@@ -288,6 +279,15 @@ a:visited {
   color: white;
   font-weight: bold;
   width: 100%;
+}
+
+.faux-link {
+  text-decoration: underline;
+  color: #b88b5f;
+}
+
+.faux-link:hover {
+  cursor: pointer;
 }
 
 .modal-outer {

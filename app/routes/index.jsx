@@ -1,4 +1,3 @@
-import { useLoaderData } from "@remix-run/react";
 import { json } from "@remix-run/node";
 import styles from "~/styles/global.css";
 import Modal from "~/components/Modal";
@@ -62,7 +61,6 @@ export default function Index() {
             </span>
             Todd
           </h1>
-          {/* &#9660; */}
           <div className="rsvp-button">
             <button onClick={() => setModalOpen(true)}>RSVP</button>
           </div>

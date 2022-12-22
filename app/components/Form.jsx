@@ -3,20 +3,29 @@ import { useFetcher } from "@remix-run/react";
 
 export default function RsvpForm() {
   const [submitted, setSubmitted] = useState(false);
-  const formRef = useRef()
+  const formRef = useRef();
   const fetcher = useFetcher();
+
+  const buttonText =
+    fetcher.state == "submitting"
+      ? "Submitting..."
+      : fetcher.state == "loading"
+      ? "Submitted!"
+      : "Submit";
 
   useEffect(() => {
     if (fetcher.type === "done" && fetcher.data.ok) {
-      setSubmitted(true)
+      setSubmitted(true);
     }
-  }, [fetcher])
+  }, [fetcher]);
 
   if (submitted) {
     return (
       <div>
         <h2>Thanks for your RSVP!</h2>
-        <p onClick={() => setSubmitted(false)}>Need to submit another?</p>
+        <p className="faux-link" onClick={() => setSubmitted(false)}>
+          Need to submit another?
+        </p>
       </div>
     );
   }
@@ -32,12 +41,13 @@ export default function RsvpForm() {
         </div>
 
         <div className="form-input__radio-buttons mb2">
-          <p>Attending the wedding?</p>
+          <p>Are you attending the wedding?</p>
           <input
             type="radio"
             id="attendingWeddingYes"
             name="attendingWedding"
             value="true"
+            checked
           />
           <label htmlFor="attendingWeddingYes">Yes</label>
 
@@ -46,18 +56,18 @@ export default function RsvpForm() {
             id="attendingWeddingNo"
             name="attendingWedding"
             value="false"
-            checked
           />
           <label htmlFor="attendingWeddingNo">No</label>
         </div>
 
         <div className="form-input__radio-buttons mb2">
-          <p>Attending the recovery?</p>
+          <p>Are you attending the recovery?</p>
           <input
             type="radio"
             id="attendingRecoveryYes"
             name="attendingRecovery"
             value="true"
+            checked
           />
           <label htmlFor="attendingRecoveryYes">Yes</label>
 
@@ -66,7 +76,6 @@ export default function RsvpForm() {
             id="attendingRecoveryNo"
             name="attendingRecovery"
             value="false"
-            checked
           />
           <label htmlFor="attendingRecoveryNo">No</label>
         </div>
@@ -77,7 +86,7 @@ export default function RsvpForm() {
         </div>
 
         <div className="form-submit pt2">
-          <button type="submit">Submit</button>
+          <button type="submit">{buttonText}</button>
         </div>
       </fetcher.Form>
     </div>
