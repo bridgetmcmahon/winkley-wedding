@@ -1,10 +1,12 @@
 import { useState, useRef, useEffect } from "react";
-import { useFetcher } from "@remix-run/react";
+import { useFetcher, useActionData } from "@remix-run/react";
 
 export default function RsvpForm() {
   const [submitted, setSubmitted] = useState(false);
   const formRef = useRef();
   const fetcher = useFetcher();
+  const errors = useActionData();
+  const hasErrors = fetcher?.errors?.name
 
   const buttonText =
     fetcher.state == "submitting"
@@ -32,12 +34,13 @@ export default function RsvpForm() {
 
   return (
     <div>
-      <h2>Please fill out the form below to RSVP</h2>
+      <h2>Fill out the form below to RSVP</h2>
 
       <fetcher.Form method="post" ref={formRef}>
         <div className="form-input__text mb2">
           <label>Name</label>
           <input type="text" name="name" />
+          {errors?.name && <small>Please tell us who you are!</small>}
         </div>
 
         <div className="form-input__radio-buttons mb2">
@@ -47,7 +50,7 @@ export default function RsvpForm() {
             id="attendingWeddingYes"
             name="attendingWedding"
             value="true"
-            checked
+            defaultChecked
           />
           <label htmlFor="attendingWeddingYes">Yes</label>
 
@@ -67,7 +70,7 @@ export default function RsvpForm() {
             id="attendingRecoveryYes"
             name="attendingRecovery"
             value="true"
-            checked
+            defaultChecked
           />
           <label htmlFor="attendingRecoveryYes">Yes</label>
 
@@ -86,7 +89,9 @@ export default function RsvpForm() {
         </div>
 
         <div className="form-submit pt2">
-          <button type="submit">{buttonText}</button>
+          <button type="submit" disabled={hasErrors}>
+            {buttonText}
+          </button>
         </div>
       </fetcher.Form>
     </div>
