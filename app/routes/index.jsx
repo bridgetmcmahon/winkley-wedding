@@ -123,7 +123,7 @@ export default function Index() {
             </p>
             <p className="mt1">
               Please note that the discount code may stop working if the hotel
-              capacity becomes limited.
+              availability becomes limited.
             </p>
           </div>
         </div>
