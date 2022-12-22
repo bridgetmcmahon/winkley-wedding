@@ -180,7 +180,7 @@ __export(routes_exports, {
 var import_node2 = require("@remix-run/node");
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-H4BG3D6W.css";
+var global_default = "/build/_assets/global-FQCXHHZW.css";
 
 // app/components/Modal.jsx
 var import_react5 = require("react");
@@ -847,7 +847,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "032fdfba", entry: { module: "/build/entry.client-7NSS7O7J.js", imports: ["/build/_shared/chunk-QSJQYQRP.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-OQ3HGFDT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-Z6443FVI.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-032FDFBA.js" };
+var assets_manifest_default = { version: "90f47e5e", entry: { module: "/build/entry.client-7NSS7O7J.js", imports: ["/build/_shared/chunk-QSJQYQRP.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-OQ3HGFDT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-HI2A36SG.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-90F47E5E.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_meta: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

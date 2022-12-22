@@ -156,6 +156,10 @@ a:visited {
   color: #b88b5f;
 }
 
+button {
+  cursor: pointer;
+}
+
 .header-image {
   background-image: linear-gradient(
       to bottom,
