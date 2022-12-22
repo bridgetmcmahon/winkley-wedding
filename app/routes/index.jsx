@@ -51,23 +51,9 @@ export function links() {
 export default function Index() {
   const [modalOpen, setModalOpen] = useState(false);
 
-  let data = useLoaderData();
-  console.log(data);
-
   return (
     <div>
       <header>
-        <nav>
-          <div className="wrapper">
-            <a href="#schedule">Schedule</a>
-            <a href="#accommodation">Accommodation</a>
-            <a href="#gifts">Gifts</a>
-            <a href="#rsvp" className="bold" onClick={() => setModalOpen(true)}>
-              <strong>RSVP</strong>
-            </a>
-          </div>
-        </nav>
-
         <div className="header-image">
           <h1>
             Bridget
@@ -76,6 +62,10 @@ export default function Index() {
             </span>
             Todd
           </h1>
+          {/* &#9660; */}
+          <div className="rsvp-button">
+            <button onClick={() => setModalOpen(true)}>RSVP</button>
+          </div>
         </div>
       </header>
 
@@ -148,7 +138,7 @@ export default function Index() {
           <div id="faq" className="wrapper section">
             <h1 className="mb2">FAQ</h1>
             <div className="mb2">
-              <p>
+              <p className="faq">
                 <strong>What do I wear?</strong>
               </p>
               <p>
@@ -158,7 +148,7 @@ export default function Index() {
             </div>
 
             <div className="mb2">
-              <p>
+              <p className="faq">
                 <strong>Are children welcome?</strong>
               </p>
               <p>
@@ -168,7 +158,7 @@ export default function Index() {
             </div>
 
             <div>
-              <p>
+              <p className="faq">
                 <strong>Is there parking available?</strong>
               </p>
               <p>
