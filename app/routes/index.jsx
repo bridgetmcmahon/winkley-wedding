@@ -61,8 +61,10 @@ export default function Index() {
             </span>
             Todd
           </h1>
-          <div className="rsvp-button">
-            <button onClick={() => setModalOpen(true)}>RSVP</button>
+          <div className="header-rsvp">
+            <button className="rsvp-button" onClick={() => setModalOpen(true)}>
+              RSVP
+            </button>
           </div>
         </div>
       </header>
@@ -170,6 +172,14 @@ export default function Index() {
                 .
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="section mt2 mb2">
+          <div>
+            <button className="rsvp-button" onClick={() => setModalOpen(true)}>
+              RSVP
+            </button>
           </div>
         </div>
 
