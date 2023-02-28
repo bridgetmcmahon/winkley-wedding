@@ -61,11 +61,6 @@ export default function Index() {
             </span>
             Todd
           </h1>
-          <div className="header-rsvp">
-            <button className="rsvp-button" onClick={() => setModalOpen(true)}>
-              RSVP
-            </button>
-          </div>
         </div>
       </header>
 
@@ -73,6 +68,14 @@ export default function Index() {
         <div id="schedule" className="wrapper section">
           <h1 className="mb1">Schedule</h1>
           <div className="schedule-item pb2">
+            <h2 className="timeline-title">Friday drinks</h2>
+            <p className="schedule-item__time">5.30pm – 7.30pm &middot; 3rd March 2023</p>
+            <p>Sixes & Sevens</p>
+            <p className="pt1">
+              Join us for a casual after work drink before the big day!
+            </p>
+          </div>
+          <div className="schedule-item pt1 pb2">
             <h2 className="timeline-title">Ceremony</h2>
             <p className="schedule-item__time">4pm &middot; 4th March 2023</p>
             <p>The Amphitheatre @ The Calile Hotel</p>
@@ -82,7 +85,7 @@ export default function Index() {
           <div className="schedule-item pt1 pb2">
             <h2 className="timeline-title">Cocktail hour</h2>
             <p className="schedule-item__time">
-              4.45pm &middot; 4th March 2023
+              4.30pm &middot; 4th March 2023
             </p>
             <p>The Terrace @ The Calile Hotel</p>
             <p>Enjoy a Spritz while we capture a few photos</p>
@@ -182,14 +185,6 @@ export default function Index() {
                 .
               </p>
             </div>
-          </div>
-        </div>
-
-        <div className="wrapper section mt2 mb2">
-          <div>
-            <button className="rsvp-button" onClick={() => setModalOpen(true)}>
-              RSVP
-            </button>
           </div>
         </div>
 

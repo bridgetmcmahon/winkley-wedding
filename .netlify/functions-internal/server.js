@@ -180,7 +180,7 @@ __export(routes_exports, {
 var import_node2 = require("@remix-run/node");
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-FQCXHHZW.css";
+var global_default = "/build/_assets/global-353GOJZK.css";
 
 // app/components/Modal.jsx
 var import_react5 = require("react");
@@ -483,34 +483,23 @@ function links() {
 function Index() {
   let [modalOpen, setModalOpen] = (0, import_react6.useState)(!1);
   return /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { children: [
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("header", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "header-image", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h1", { children: [
-        "Bridget",
-        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("span", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("em", { children: "and" }, void 0, !1, {
-          fileName: "app/routes/index.jsx",
-          lineNumber: 60,
-          columnNumber: 15
-        }, this) }, void 0, !1, {
-          fileName: "app/routes/index.jsx",
-          lineNumber: 59,
-          columnNumber: 13
-        }, this),
-        "Todd"
-      ] }, void 0, !0, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("header", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "header-image", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h1", { children: [
+      "Bridget",
+      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("span", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("em", { children: "and" }, void 0, !1, {
         fileName: "app/routes/index.jsx",
-        lineNumber: 57,
-        columnNumber: 11
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "header-rsvp", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("button", { className: "rsvp-button", onClick: () => setModalOpen(!0), children: "RSVP" }, void 0, !1, {
-        fileName: "app/routes/index.jsx",
-        lineNumber: 65,
-        columnNumber: 13
+        lineNumber: 60,
+        columnNumber: 15
       }, this) }, void 0, !1, {
         fileName: "app/routes/index.jsx",
-        lineNumber: 64,
-        columnNumber: 11
-      }, this)
+        lineNumber: 59,
+        columnNumber: 13
+      }, this),
+      "Todd"
     ] }, void 0, !0, {
+      fileName: "app/routes/index.jsx",
+      lineNumber: 57,
+      columnNumber: 11
+    }, this) }, void 0, !1, {
       fileName: "app/routes/index.jsx",
       lineNumber: 56,
       columnNumber: 9
@@ -523,132 +512,158 @@ function Index() {
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { id: "schedule", className: "wrapper section", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h1", { className: "mb1", children: "Schedule" }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 74,
+          lineNumber: 69,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "schedule-item pb2", children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h2", { className: "timeline-title", children: "Ceremony" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h2", { className: "timeline-title", children: "Friday drinks" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 76,
+            lineNumber: 71,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "schedule-item__time", children: "4pm \xB7 4th March 2023" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "schedule-item__time", children: "5.30pm \u2013 7.30pm \xB7 3rd March 2023" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 77,
+            lineNumber: 72,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "The Amphitheatre @ The Calile Hotel" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "Sixes & Sevens" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 78,
+            lineNumber: 73,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "Please arrive by 3.45pm" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "pt1", children: "Join us for a casual after work drink before the big day!" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 79,
-            columnNumber: 13
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "Dress code: Cocktail" }, void 0, !1, {
-            fileName: "app/routes/index.jsx",
-            lineNumber: 80,
+            lineNumber: 74,
             columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 75,
+          lineNumber: 70,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "schedule-item pt1 pb2", children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h2", { className: "timeline-title", children: "Ceremony" }, void 0, !1, {
+            fileName: "app/routes/index.jsx",
+            lineNumber: 79,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "schedule-item__time", children: "4pm \xB7 4th March 2023" }, void 0, !1, {
+            fileName: "app/routes/index.jsx",
+            lineNumber: 80,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "The Amphitheatre @ The Calile Hotel" }, void 0, !1, {
+            fileName: "app/routes/index.jsx",
+            lineNumber: 81,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "Please arrive by 3.45pm" }, void 0, !1, {
+            fileName: "app/routes/index.jsx",
+            lineNumber: 82,
+            columnNumber: 13
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "Dress code: Cocktail" }, void 0, !1, {
+            fileName: "app/routes/index.jsx",
+            lineNumber: 83,
+            columnNumber: 13
+          }, this)
+        ] }, void 0, !0, {
+          fileName: "app/routes/index.jsx",
+          lineNumber: 78,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "schedule-item pt1 pb2", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h2", { className: "timeline-title", children: "Cocktail hour" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 83,
+            lineNumber: 86,
             columnNumber: 13
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "schedule-item__time", children: "4.45pm \xB7 4th March 2023" }, void 0, !1, {
-            fileName: "app/routes/index.jsx",
-            lineNumber: 84,
-            columnNumber: 13
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "The Terrace @ The Calile Hotel" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "schedule-item__time", children: "4.30pm \xB7 4th March 2023" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
             lineNumber: 87,
             columnNumber: 13
           }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "The Terrace @ The Calile Hotel" }, void 0, !1, {
+            fileName: "app/routes/index.jsx",
+            lineNumber: 90,
+            columnNumber: 13
+          }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "Enjoy a Spritz while we capture a few photos" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 88,
+            lineNumber: 91,
             columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 82,
+          lineNumber: 85,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "schedule-item pt1 pb2", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h2", { className: "timeline-title", children: "Reception" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 91,
+            lineNumber: 94,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "schedule-item__time", children: "6pm \xB7 4th March 2023" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 92,
+            lineNumber: 95,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "The Grand Rooms @ The Calile Hotel" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 93,
+            lineNumber: 96,
             columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 90,
+          lineNumber: 93,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "schedule-item pt1", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h2", { className: "timeline-title", children: "Recovery" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 96,
+            lineNumber: 99,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "schedule-item__time", children: "1pm \xB7 5th March 2023" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 97,
+            lineNumber: 100,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "Slipstream Brewery" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 98,
+            lineNumber: 101,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "94 Wilkie Street, Yeerongpilly" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 99,
+            lineNumber: 102,
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "pt1", children: "Please join us for a recovery beverage the following day to celebrate Todd's birthday" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 100,
+            lineNumber: 103,
             columnNumber: 13
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 95,
+          lineNumber: 98,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/index.jsx",
-        lineNumber: 73,
+        lineNumber: 68,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { id: "accommodation", className: "alternate-background", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "wrapper section", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h1", { className: "mb1", children: "Accommodation" }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 109,
+          lineNumber: 112,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "For family and friends who are travelling from out of town and wish to stay at the Calile Hotel (or would like a little staycation), we have kindly been given a 15% discount on accommodation for our guests." }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 110,
+          lineNumber: 113,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "mt1", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(
@@ -662,119 +677,119 @@ function Index() {
           !1,
           {
             fileName: "app/routes/index.jsx",
-            lineNumber: 117,
+            lineNumber: 120,
             columnNumber: 15
           },
           this
         ) }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 116,
+          lineNumber: 119,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "mt1", children: "Please note that the discount code may stop working if the hotel availability becomes limited." }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 124,
+          lineNumber: 127,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/index.jsx",
-        lineNumber: 108,
+        lineNumber: 111,
         columnNumber: 11
       }, this) }, void 0, !1, {
         fileName: "app/routes/index.jsx",
-        lineNumber: 107,
+        lineNumber: 110,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { id: "gifts", className: "wrapper section", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h1", { className: "mb1", children: "Gifts" }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 132,
+          lineNumber: 135,
           columnNumber: 11
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "As we are travelling overseas after the wedding, we kindly ask for no physical gifts. If you wish to help us celebrate with a gift, there will be a wishing well to contribute to on the day." }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 133,
+          lineNumber: 136,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/index.jsx",
-        lineNumber: 131,
+        lineNumber: 134,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { id: "rsvp", className: "alternate-background", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { id: "faq", className: "wrapper section", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("h1", { className: "mb2", children: "Questions" }, void 0, !1, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 142,
+          lineNumber: 145,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "mb2", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "faq", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("strong", { children: "What do I wear?" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 145,
+            lineNumber: 148,
             columnNumber: 17
           }, this) }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 144,
+            lineNumber: 147,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "The dress code is cocktail, and dance floor appropriate shoes are strongly encouraged." }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 147,
+            lineNumber: 150,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 143,
+          lineNumber: 146,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "mb2", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "faq", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("strong", { children: "When do I need to RSVP?" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 155,
+            lineNumber: 158,
             columnNumber: 17
           }, this) }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 154,
+            lineNumber: 157,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "We would appreciate your RSVP by 3rd February." }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 157,
+            lineNumber: 160,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 153,
+          lineNumber: 156,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "mb2", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "faq", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("strong", { children: "Are children welcome?" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 162,
+            lineNumber: 165,
             columnNumber: 17
           }, this) }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 161,
+            lineNumber: 164,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: "Our wedding is an over 18 event. However, our recovery is not and we would love for you to bring them along on Sunday!" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 164,
+            lineNumber: 167,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 160,
+          lineNumber: 163,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { className: "faq", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("strong", { children: "Is there parking available?" }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 172,
+            lineNumber: 175,
             columnNumber: 17
           }, this) }, void 0, !1, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 171,
+            lineNumber: 174,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("p", { children: [
@@ -791,7 +806,7 @@ function Index() {
               !1,
               {
                 fileName: "app/routes/index.jsx",
-                lineNumber: 176,
+                lineNumber: 179,
                 columnNumber: 17
               },
               this
@@ -799,44 +814,31 @@ function Index() {
             "."
           ] }, void 0, !0, {
             fileName: "app/routes/index.jsx",
-            lineNumber: 174,
+            lineNumber: 177,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/index.jsx",
-          lineNumber: 170,
+          lineNumber: 173,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/index.jsx",
-        lineNumber: 141,
+        lineNumber: 144,
         columnNumber: 11
       }, this) }, void 0, !1, {
         fileName: "app/routes/index.jsx",
-        lineNumber: 140,
-        columnNumber: 9
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "wrapper section mt2 mb2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("button", { className: "rsvp-button", onClick: () => setModalOpen(!0), children: "RSVP" }, void 0, !1, {
-        fileName: "app/routes/index.jsx",
-        lineNumber: 190,
-        columnNumber: 13
-      }, this) }, void 0, !1, {
-        fileName: "app/routes/index.jsx",
-        lineNumber: 189,
-        columnNumber: 11
-      }, this) }, void 0, !1, {
-        fileName: "app/routes/index.jsx",
-        lineNumber: 188,
+        lineNumber: 143,
         columnNumber: 9
       }, this),
       modalOpen && /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(Modal, { closeModal: () => setModalOpen(!1) }, void 0, !1, {
         fileName: "app/routes/index.jsx",
-        lineNumber: 196,
+        lineNumber: 191,
         columnNumber: 23
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/index.jsx",
-      lineNumber: 72,
+      lineNumber: 67,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
@@ -847,7 +849,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "24313732", entry: { module: "/build/entry.client-7NSS7O7J.js", imports: ["/build/_shared/chunk-QSJQYQRP.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-OQ3HGFDT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-UUPA7VB5.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-24313732.js" };
+var assets_manifest_default = { version: "f2778fc1", entry: { module: "/build/entry.client-7NSS7O7J.js", imports: ["/build/_shared/chunk-QSJQYQRP.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-OQ3HGFDT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-HJ6X4LNH.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-F2778FC1.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_meta: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
